@@ -5,7 +5,7 @@
     "type": "module",
     "main": "index.js",
     "keywords": [],
-    "author": "Ashok Reddy Manchala(amashokreddy864@gmail.com)",
+    "author": "Ashok Reddy Manchala",
     "license": "ISC",
     "scripts": {
         "install": "npx playwright install",

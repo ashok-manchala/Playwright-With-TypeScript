@@ -4,16 +4,20 @@ import dotenv from "dotenv";
 dotenv.config();
 
 switch (process.env.ENVIRONMENT) {
-  case "dev":
-    dotenv.config({ path: "./env/.env_dev", override: true });
+  case "uat":
+    dotenv.config({ path: "./env/.env_uat", override: true });
     break;
 
   case "qa":
     dotenv.config({ path: "./env/.env_qa", override: true });
     break;
 
+  case "prepod":
+    dotenv.config({ path: "./env/.env_prepod", override: true });
+    break;
+
   default:
-    dotenv.config({ path: "./env/.env_dev", override: true });
+    dotenv.config({ path: "./env/.env_qa", override: true });
 }
 
 export default defineConfig({
